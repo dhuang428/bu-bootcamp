@@ -34,4 +34,10 @@ public class ContactTest {
   void toString_containsPhone() {
     assertTrue(contact.toString().contains("555 0101"));
   }
+
+  // additional test
+  @Test
+  void getPhone_returnsExactString_notTransformed() { 
+    assertEquals("+1 617 555 0101", contact.getPhone());
+  }   
 }
